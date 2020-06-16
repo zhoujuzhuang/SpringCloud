@@ -1,0 +1,9 @@
+server:
+  port: 10086
+spring:
+  application:
+    name: eureka-server # Ӧ�����ƣ�����Eureka����ʾ
+eureka:
+  client:
+    service-url: # EurekaServer�ĵ�ַ���������Լ��ĵ�ַ������Ǽ�Ⱥ����Ҫ��������Server�ĵ�ַ��
+      defaultZone: http://127.0.0.1:${server.port}/eureka
